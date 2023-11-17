@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mazur Nadiia: Konkurz na pracovné miesto v leteckom podniku</title>
+    <style type="text/css">
+        input {
+            font-family: "Times New Roman";
+            font-size: 1rem;
+        }
+
+        body {
+            font-family: "Times New Roman";
+            font-size: 1rem;
+        }
+
+        select {
+            font-family: "Times New Roman";
+            font-size: 1rem;
+        }
+
+        input:valid {
+            background-color: #cceeff;
+        }
+
+        select:valid {
+            background-color: #cceeff;
+        }
+
+        input:invalid {
+            background-color: #ffe6e6;
+        }
+
+        select:invalid {
+            background-color: #ffe6e6;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Konkurz na pracovné miesto v leteckom podniku</h2>
+    <form action="skript.php" method="get" style="padding-left: 25px;">
+        <div style="width: 350px; background-color: rgb(238, 236, 234); padding: 10px; border: 2px double black;">
+            <fieldset style="background-color: rgb(196, 199, 196); border: 2px dashed black;">
+                <legend style="background-color: white; border:  2px solid black;">&nbsp;Osoba&nbsp;</legend>
+                <table border="0">
+                    <tr>
+                        <td>Meno:</td>
+                        <td><input type="text" name="meno" placeholder="Meno" required></td>
+                    </tr>
+                    <tr>
+                        <td>Priezvisko:</td>
+                        <td><input type="text" name="priezvisko" placeholder="Priezvisko" required></td>
+                    </tr>
+                    <tr>
+                        <td><label> Dátum narodenia:</label></td>
+                        <td><input type="date" name="datum" required=""></td>
+                    </tr>
+                    <tr>
+                        <td>Vzdelanie:</td>
+                        <td>
+                            <select name="tema" style="width: 150px;">
+                                <option>Základné vzdelanie</option>
+                                <option>Stredoškolské vzdelanie</option>
+                                <option>Stredoškolské vzdelanie s maturitou</option>
+                                <option>Vysokoškolské vzdelanie I. stupňa</option>
+                                <option>Vysokoškolské vzdelanie II. stupňa</option>
+                                <option>Vysokoškolské vzdelanie III. stupňa</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset><br>
+            <fieldset style="background-color: rgb(196, 199, 196); border: 2px dotted black;">
+                <legend style="background-color: white; border:  2px solid black;">&nbsp;Pracovná pozícia &nbsp;
+                </legend>
+                <table border="0">
+                    <tr>
+                        <td>Mám&nbsp;záujem&nbsp;o:</td>
+                        <td>
+                            <select name="pozicia" style="width: 150px;">
+                                <option>pilot</option>
+                                <option>letuška</option>
+                                <option>ochrana letiska</option>
+                                <option>sekretárka</option>
+                                <option>referent</option>
+                                <option>vodič</option>
+                                <option>upratovačka</option>
+                                <option>predavač</option>
+                                <option>vedúci oddelenia</option>
+                                <option>poradca</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Požadujem&nbsp;ubytovanie:</td>
+                        <td>
+                            <label><input type="radio" name="ubytovanie" value="áno"> áno</label>
+                            <label><input type="radio" name="ubytovanie" value="nie" checked> nie</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mesačný&nbsp;plat</td>
+
+                        <td>
+                            <select name="pozicia" style="width: 150px;">
+                                <option>od 500 EUR</option>
+                                <option>od 700 EUR</option>
+                                <option>od 1000 EUR</option>
+                                <option>od 1 500 EUR</option>
+                                <option>od 2 000 EUR</option>
+                                <option>od 2 500 EUR</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Druh&nbsp;pracovneho&nbsp;pomeru</td>
+
+                        <td>
+                            <select name="pozicia" style="width: 150px;">
+                                <option>plný úväzok </option>
+                                <option>živnosť </option>
+                                <option>na dohodu (brigády) </option>
+                                <option>skrátený úväzok </option>
+                                <option>internship, stáž </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jazykové znalosti</td>
+                           <td>
+                               Anglický jazyk <INPUT CHECKED TYPE="checkbox" NAME="Anglický_jazyk" VALUE="Anglický_jazyk">
+                               Slovenský jazyk <INPUT TYPE="checkbox" NAME="Slovenský_jazyk" VALUE="Slovenský_jazyk">
+                               Nemecký jazyk <INPUT TYPE="checkbox" NAME="Nemecký_jazyk" VALUE="Nemecký_jazyk">
+                               Ukrajinský jazyk <INPUT TYPE="checkbox" NAME="Ukrajinský_jazyk" VALUE="Ukrajinský_jazyk">
+                           </td>
+                       </tr>
+                       
+                </table>
+            </fieldset>
+            <input type="submit" value="Odošli formulár"
+                style="background-color:rgb(166, 170, 166) ; color: black; border-color: white;">
+            <input type="reset" value="Obnov formulár">
+        </div><br>
+    </form>
+</body>
+
+</html>
