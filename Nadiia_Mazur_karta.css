@@ -1,0 +1,112 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Calibri;
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-section,
+.about-me {
+    padding: 5px;
+    background-color: white;
+    vertical-align: top;
+    border-spacing: 0px;
+    border-collapse: separate;
+    border: 0px;
+}
+
+.professional-details {
+    width: 160px;
+    border: 0px;
+    padding: 5px;
+    padding-top: 0px;
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+
+.personal-details {
+    border: 0px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
+    margin-bottom: 5px;
+}
+
+
+
+.spacer {
+    width: 16px;
+}
+
+.hr-1 {
+    color: #f5f5f5;
+    size: 1px;
+    width: 100%;
+}
+
+.about-me {
+    padding: 5px;
+    width: 700px;
+    background-color: white;
+    vertical-align: top;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px; 
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 0px; 
+}
+
+.column-2 {
+    margin-bottom: 5px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.column-3 {
+    margin-bottom: 5px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.row {
+    width: 80px;
+    margin-bottom: 10px; 
+}
+
+.row-2 {
+    width: 80px; 
+    margin-bottom: 5px; 
+}
+
+.row-3 {
+    width: 80px; 
+    margin-bottom: 10px; 
+    margin-right: 75px;
+}
